@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS events (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   title TEXT NOT NULL,
   description TEXT,
-  event_type TEXT NOT NULL CHECK (event_type IN ('lecture', 'exam', 'assignment', 'seminar', 'workshop', 'sports', 'cultural', 'ceremony', 'meeting', 'deadline', 'holiday', 'other')),
+  event_type TEXT NOT NULL CHECK (event_type IN ('lecture', 'exam', 'assignment', 'seminar', 'workshop', 'sports', 'cultural', 'ceremony', 'meeting', 'deadline', 'holiday', 'social', 'other')),
   start_time TIMESTAMPTZ NOT NULL,
   end_time TIMESTAMPTZ,
   location TEXT,

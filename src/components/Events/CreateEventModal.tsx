@@ -142,6 +142,7 @@ export function CreateEventModal({ event, onClose, onSuccess }: CreateEventModal
                 <option value="meeting">Meeting</option>
                 <option value="deadline">Deadline</option>
                 <option value="holiday">Holiday</option>
+                <option value="social">Social</option>
                 <option value="other">Other</option>
               </select>
             </div>
